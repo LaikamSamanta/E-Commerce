@@ -6,8 +6,9 @@ import Cart from "./components/common/Cart";
 import Checkout from "./components/common/Checkout";
 import Login from "./components/admin/Login";
 import Dashboard from "./components/admin/Dashboard";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import { AdminRequireAuth } from "./components/admin/AdminRequireAuth";
+import { default as ShowCategories } from "./components/admin/category/Show";
 
 
 function App() {
@@ -27,6 +28,8 @@ function App() {
             <Dashboard />
           </AdminRequireAuth>
         } />
+
+        <Route path="/admin/categories" element={<ShowCategories />} />
       </Routes>
     </BrowserRouter>
     <ToastContainer />

@@ -7,6 +7,22 @@ $primary-black: #061123;
 $secondary-color:#0284FF;
 $tertiary-color:#2F4858;
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
 body{
     font-family: $primary-font;
     font-size: 1em;
@@ -137,7 +153,7 @@ footer{
     .swiper{
         .swiper-wrapper{
             .swiper-slide{
-                height: 650px;
+                height: 700px;
                 .content{
                     height: 100%;
                     width: 100%;

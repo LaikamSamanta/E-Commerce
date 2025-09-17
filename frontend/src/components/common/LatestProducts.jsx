@@ -1,4 +1,8 @@
 import ProductImg from "../../assets/images/eight.jpg";
+import ProductImg1 from "../../assets/images/Mens/five.jpg";
+import ProductImg2 from "../../assets/images/Mens/fivee.jpg";
+import ProductImg3 from "../../assets/images/Mens/four.jpg";
+
 
 const LatestProducts = () => {
   return (
@@ -21,7 +25,7 @@ const LatestProducts = () => {
             <div className="col-md-3 col-6">
               <div className="product card border-0">
                 <div className="card-img">
-                  <img src={ProductImg} alt="Product" className="w-100" />
+                  <img src={ProductImg1} alt="Product" className="w-100" />
                 </div>
                 <div className="card-body pt-3">
                   <a href="">Red Check Shirt for Men</a>
@@ -33,7 +37,7 @@ const LatestProducts = () => {
             <div className="col-md-3 col-6">
               <div className="product card border-0">
                 <div className="card-img">
-                  <img src={ProductImg} alt="Product" className="w-100" />
+                  <img src={ProductImg2} alt="Product" className="w-100" />
                 </div>
                 <div className="card-body pt-3">
                   <a href="">Red Check Shirt for Men</a>
@@ -45,7 +49,7 @@ const LatestProducts = () => {
             <div className="col-md-3 col-6">
               <div className="product card border-0">
                 <div className="card-img">
-                  <img src={ProductImg} alt="Product" className="w-100" />
+                  <img src={ProductImg3} alt="Product" className="w-100" />
                 </div>
                 <div className="card-body pt-3">
                   <a href="">Red Check Shirt for Men</a>

@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { AdminAuthContext } from "../context/Admin";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
         const {logout} = useContext(AdminAuthContext);
@@ -11,7 +12,7 @@ const Sidebar = () => {
             <a href="">Dashboard</a>
           </li>
           <li>
-            <a href="">Categories</a>
+            <Link to="/admin/categories">Categories</Link>
           </li>
           <li>
             <a href="">Brands</a>

@@ -1,6 +1,7 @@
 import Layout from "./Layout";
 import { Link } from "react-router-dom";
 import ProductImg from "../../assets/images/Mens/six.jpg";
+import ProductImg1 from "../../assets/images/Mens/four.jpg";
 
 const Cart = () => {
   return (
@@ -60,12 +61,12 @@ const Cart = () => {
 
                 <tr>
                   <td>
-                    <img src={ProductImg} alt="Product" width={80} />
+                    <img src={ProductImg1} alt="Product" width={80} />
                   </td>
                   <td>
                     <h4>Title</h4>
                     <div className="d-flex align-items-center pt-3">
-                      <span>$10.00</span>
+                      <span>$25.00</span>
                       <div className="ps-3">
                         <button className="btn btn-size">S</button>
                       </div>
@@ -99,17 +100,17 @@ const Cart = () => {
             <div className="col-md-3">
               <div className="d-flex justify-content-between border-bottom pb-2">
                 <div>Subtotal</div>
-                <div>$20.00</div>
+                <div>$35.00</div>
               </div>
               <div className="d-flex justify-content-between border-bottom pb-2">
                 <div>Shipping</div>
-                <div>$5.00</div>
+                <div>$0.00</div>
               </div>
               <div className="d-flex justify-content-between border-bottom pb-2">
                 <div>
                   <strong>Grand Total</strong>
                 </div>
-                <div>$25.00</div>
+                <div>$35.00</div>
               </div>
               <div className="d-flex justify-content-end py-3">
                 <button className="btn btn-primary">Proceed to Checkout</button>
