@@ -20,6 +20,7 @@ const Show = () => {
       }
     }).then((res) => res.json())
       .then((result) => {
+        setLoader(false)
         if (result.status == 200) {
           setCategories(result.data);
         } else {
@@ -53,7 +54,7 @@ const Show = () => {
             }
 
             {
-                loader == false && categories.length == 0 && <Nostate/>
+                loader == false && categories.length == 0 && <Nostate text="Categories not found"/>
             }
 
             {

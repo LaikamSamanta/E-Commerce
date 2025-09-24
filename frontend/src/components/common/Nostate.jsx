@@ -1,8 +1,8 @@
 
-const Nostate = () => {
+const Nostate = ({text='Record not found'}) => {
   return (
     <div className="text-center py-5">
-      Record not found
+      {text}
     </div>
   )
 }
