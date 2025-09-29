@@ -72,9 +72,10 @@ const Login = () => {
                   className={`form-control ${errors.email && "is-invalid"}`}
                   placeholder="Enter your email"
                 />
-                {errors.email && (
+                {
+                  errors.email && 
                   <p className="invalid-feedback">{errors.email?.message}</p>
-                )}
+                }
               </div>
 
               <div className="mb-3">
@@ -82,16 +83,18 @@ const Login = () => {
                   Password
                 </label>
                 <input
-                  {...register("password", {
+                  {
+                    ...register("password", {
                     required: "The password field is required",
                   })}
                   type="password"
                   className={`form-control ${errors.password && "is-invalid"}`}
                   placeholder="Enter your password"
                 />
-                {errors.password && (
+                {
+                  errors.password && 
                   <p className="invalid-feedback">{errors.password?.message}</p>
-                )}
+                }
               </div>
 
               <button className="btn btn-secondary">Login</button>
